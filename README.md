@@ -1,4 +1,4 @@
-# Prueba de Diagnostico
+# Prueba de Diagnóstico
 ## Programación Web III
 
 ### Antes de Empezar:
@@ -86,7 +86,7 @@ Estás postulando para un puesto de desarrollador **Front-end** en una empresa q
 
 ![Diseño Pokedex](https://live.staticflickr.com/65535/53488146658_c14ae2d79c_z.jpg)
 
-2. En el catálogo debes presentar los primeros 6 **Pokemons** con ids múltiplos de 6 (5, 10, 15, 20, 25, 30) en un layout de 3 x 3, es decir, 3 filas y 3 columnas.
+2. En el catálogo debes presentar los primeros 6 **Pokemons** con ids múltiplos de 5 (5, 10, 15, 20, 25, 30) en un layout de 3 x 3, es decir, 3 filas y 3 columnas.
 
 #### IMPORTANTE: 
 * Para construir los componentes debes utilizar: React, JSX, TSX, eventos, estados, grid, flexbox, clases, etc. **Sin estilos CSS tu solución solo será considerada código sin sentido**. No se permite el uso de tablas.
