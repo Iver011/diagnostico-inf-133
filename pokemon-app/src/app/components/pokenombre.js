@@ -13,7 +13,7 @@ function pokeNombre({url}){
     },[])
 
     return(
-        <div className="conteiner-nombre">
+        <div className="nombre-conteiner">
             {nombre}
         </div>
     );
