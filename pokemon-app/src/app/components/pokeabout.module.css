@@ -1,0 +1,31 @@
+.about-container{
+    display: flex;
+    flex-direction: column ;
+}
+.item{
+    display: flex;
+    align-items: center;
+}
+.label{
+    color: var(--gray);
+    width: 29px;
+    height: 18px;
+    left: 24px;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+margin-left: 24px;
+}
+.value{
+    color: var(--black);
+font-size: 12px;
+font-weight: 600;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+margin-left: 73px;
+padding: 10px;
+text-transform: capitalize;
+}

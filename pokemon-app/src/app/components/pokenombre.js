@@ -1,3 +1,4 @@
+import style from "./pokenombre.module.css";
 import { useEffect, useState } from "react";
 function pokeNombre({url}){
     const [nombre,setnombre]=useState("");
@@ -13,7 +14,7 @@ function pokeNombre({url}){
     },[])
 
     return(
-        <div className="nombre-conteiner">
+        <div className={style["nombre-conteiner"]}>
             {nombre}
         </div>
     );

@@ -1,0 +1,12 @@
+.nombre-conteiner{
+    color: var(--blue);
+    text-transform: capitalize;
+    width: 121px;
+    height: 48px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    margin-top:30px;
+    margin-left: 20px;
+}

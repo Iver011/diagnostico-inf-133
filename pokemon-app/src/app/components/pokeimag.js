@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import style from "./pokeimag.module.css"
 import Image from "next/image";
 function PokeImg({url}){
 
@@ -12,8 +13,8 @@ function PokeImg({url}){
         })
     },[])
     return(
-            <div className="image-conteiner">
-                <Image src={imagen} width={250} height={250} ></Image>
+            <div className={style["image-conteiner"]}>
+                <Image src={imagen} width={325} height={325} ></Image>
             </div>
     );
 

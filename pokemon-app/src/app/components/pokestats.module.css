@@ -1,0 +1,32 @@
+.stats-conteiner{
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.name{
+width: 100px;
+margin-left: 5px;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--gray);
+margin-left: 24px;
+text-transform: capitalize;
+}
+.info{
+color: var(--black);
+font-size: 12px;
+font-weight: 600;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+margin-left: 15px;
+}

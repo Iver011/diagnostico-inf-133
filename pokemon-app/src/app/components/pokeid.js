@@ -1,3 +1,5 @@
+import style from "./pokeid.module.css"
+
 import { useEffect, useState } from "react";
 
 function PokeId({url}){
@@ -10,8 +12,8 @@ function PokeId({url}){
     },[])
 
     return(
-        <div className="id-conteiner">
-            {id}
+        <div className={style["id-conteiner"]}>
+            {`#${String(id).padStart(3,'0')}`}
         </div>
 
     );
