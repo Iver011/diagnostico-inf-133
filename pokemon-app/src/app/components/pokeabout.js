@@ -1,28 +1,8 @@
 import { useEffect, useState } from "react";
 import style from "./pokeabout.module.css";
 
-function PokeAbout({url}){
-    const [type,setType]=useState("");
-    const [altura,setAltura]=useState("");
-    const [peso,setPeso]=useState("");
-    const [skills,setSkills]=useState("")
-
-    useEffect(()=>{
-        fetch(url)
-        .then(res=>res.json())
-        .then(data=>{
-            setType(data.types.map((array)=>array.type.name).join(", ")),
-            setAltura(data.height),
-            setPeso(data.weight),
-            setSkills(data.abilities.map((skills)=>skills.ability.name).join(", "))
-        
-            
-        })
-
-
-    },[])
-
-
+function PokeAbout({type,peso,altura,skills}){
+    
 
     return (
         <div className={style["about-container"]}>
@@ -48,5 +28,3 @@ function PokeAbout({url}){
         </div>
     );
 } export default PokeAbout;
-
-

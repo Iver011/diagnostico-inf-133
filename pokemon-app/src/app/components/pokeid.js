@@ -2,14 +2,8 @@ import style from "./pokeid.module.css"
 
 import { useEffect, useState } from "react";
 
-function PokeId({url}){
-    const[id,setId]=useState("");
-
-    useEffect(()=>{
-        fetch(url)
-        .then(res=>res.json())
-        .then(data=>{setId(data.id)})
-    },[])
+function PokeId({id}){
+    
 
     return(
         <div className={style["id-conteiner"]}>
