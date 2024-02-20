@@ -86,3 +86,32 @@
     right: 90%;
 
 }
+.buscador{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: transparent;
+    color: var(--blue);
+    padding: 20px;
+    top: 10%;
+    left: 70%;
+    transform: translateY(-100%);   
+    align-items: center;
+}
+.buscar{
+    width: 150px;
+    height: 40px;
+    border-radius: 15px 0px 0px 15px;
+    border: solid 2px var(--blue);
+    font-size: 25px;
+    text-align: center;
+}
+.search{
+    width: 70px;
+    height: 40px;
+    border: none;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 0px 15px 15px 0px;
+    
+}

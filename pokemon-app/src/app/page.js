@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 export default function Home() {  
   const [id, setId] = useState(2);
   const [pokemonData, setPokemonData] = useState(null);
+  const [searchId,setSearchId]=useState("")
 
   useEffect(()=>{
     fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
@@ -30,6 +31,18 @@ export default function Home() {
   const prev=()=>{
     setId(id-1)
   }
+
+
+  const searchPokemon = () => {
+    const searchIdNumber = parseInt(searchId);
+    if (!isNaN(searchIdNumber) && searchIdNumber > 0) {
+      setId(searchIdNumber);
+      setSearchId(""); 
+    } else {
+      alert("Por favor, ingresa un ID de Pokémon válido.");
+    }
+  };
+  
   return (
     
     <main className={styles.main}>
@@ -51,6 +64,12 @@ export default function Home() {
       </div>
       <button  className={styles.arrow} id={styles.sig} onClick={next}>NEXT</button>
       <button  className={styles["arrow"]} id={styles.prev} onClick={prev}>PREV</button>
+      <div className={styles.buscador}>
+      <input className={styles["buscar"]} type="text" placeholder="ID" value={searchId} onChange={(e)=>setSearchId(e.target.value)}/>
+      <button className={styles["search"]} onClick={()=>searchPokemon()}>
+      Buscar
+      </button>
+      </div>
     </main>
   );
 }
